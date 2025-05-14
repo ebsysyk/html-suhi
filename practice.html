@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平成最強アイドル松浦亜弥について</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div class="row">
+                <h1>平成最強アイドル松浦亜弥について</h1>
+            </div>
+        </header>
+
+    </div>
+    <hr>
+
+    <div class="container">
+        <form id="myForm" onsubmit="handleSubmit(event)" method="post" class="row">
+            <p>2025年2月24日よりハロプロの楽曲サブスク第2弾として松浦亜弥、後藤真希、藤本美貴、GAM、ごまっとう
+                が解禁され、久しぶりに松浦亜弥の楽曲を聞くとやはり21世紀最強アイドルは松浦亜弥だと思った。
+                何故最強たるか所以についてここにまとめる所存です。
+            </p>
+            <div class="form-group">
+                <label for="ayaya">なにが知りたい？</label>
+                <select name="ayaya" id="ayaya" class="form-control">
+                    <option value="">選択してください</option>
+                    <option value="プロフィール">プロフィール</option>
+                    <option value="曲">曲</option>
+                    <option value="あややの凄さ">あややの凄さ</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-default">go</button>
+        </form>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            var form = document.getElementById('myForm');
+            var input = document.getElementById('ayaya').value;
+            if (input === '曲') {
+                form.action = 'practice2.html';
+            }
+            if (input === 'プロフィール') {
+                form.action = 'practice3.html';
+            }
+            if (input === 'あややの凄さ') {
+                form.action = 'practice4.html';
+            }
+
+            form.submit();
+        }
+    </script>
+
+
+
+    <!-- <button type="submit"><a href="practice2.html">飛ぶ</a></button> -->
+</body>
+
+</html>

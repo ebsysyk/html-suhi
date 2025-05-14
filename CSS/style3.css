@@ -1,0 +1,164 @@
+@import url(sanitize.css);
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("kabegami.jpg"); */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+}
+
+
+header {
+    background-color: rgba(0, 255, 238, 0.296);
+    padding: 10px;
+    color: #120101;
+
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+.description img {
+    float: left;
+    margin: 0 10px 10px 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+
+}
+
+p {
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1px;
+    color: rgb(0, 2, 4);
+}
+
+.balloonoya {
+    position: relative;
+    /* 指定した分だけ相対的に移動 */
+}
+
+.balloonoya:hover .balloon {
+    display: inline;
+    /* インライン要素として表示 */
+}
+
+.balloon {
+    position: absolute;
+    /* 親要素を基準 */
+    display: none;
+    /* 要素を非表示 */
+    background-image: url("ごまっとう.jpg");
+    padding: 2px;
+    /* テキストの前後の余白 */
+    background-color: rgba(255, 255, 255, 0.50);
+    /* 背景色（透明度） */
+    width: 250px;
+    /* 吹き出し全体の幅 */
+    height: 290px;
+    left: 30%;
+    /* 表示位置 */
+    top: 100%;
+    /* 表示位置 */
+    /* margin-bottom: 12px; */
+    /* 表示位置 */
+    font-size: 120%;
+    color: aliceblue;
+    font-family: cursive;
+    /* 文字サイズ */
+}
+
+.balloon:after {
+    border-top: 12px solid rgba(255, 255, 255, 0.50);
+    /* 吹き出し口の高さ・色 */
+    border-left: 10px solid transparent;
+    /* 吹き出し口の幅１／２ */
+    border-right: 10px solid transparent;
+    /* 吹き出し口の幅１／２ */
+    bottom: -12px;
+    /* 吹き出し口の位置調整 */
+    left: 5%;
+    /* 吹き出し口の横位置 */
+    content: "";
+    /* コンテンツの挿入 */
+    position: absolute;
+    /* 親要素を基準 */
+}
+
+.balloonoya2 {
+    position: relative;
+    /* 指定した分だけ相対的に移動 */
+}
+
+.balloonoya2:hover .balloon2 {
+    display: inline;
+    /* インライン要素として表示 */
+}
+
+.balloon2 {
+    position: absolute;
+    /* 親要素を基準 */
+    display: none;
+    /* 要素を非表示 */
+    background-image: url("「ね〜え」.jpg");
+    padding: 2px;
+    /* テキストの前後の余白 */
+    background-color: rgba(255, 255, 255, 0.50);
+    /* 背景色（透明度） */
+    width: 150px;
+    /* 吹き出し全体の幅 */
+    height: 148px;
+    left: 30%;
+    /* 表示位置 */
+    bottom: 100%;
+    /* 表示位置 */
+    /* margin-bottom: 12px; */
+    /* 表示位置 */
+    font-size: 60%;
+    color: rgb(238, 20, 122);
+    font-family: cursive;
+
+}
+
+.balloon2:after {
+    border-top: 12px solid rgba(255, 255, 255, 0.50);
+    /* 吹き出し口の高さ・色 */
+    border-left: 10px solid transparent;
+    /* 吹き出し口の幅１／２ */
+    border-right: 10px solid transparent;
+    /* 吹き出し口の幅１／２ */
+    bottom: -12px;
+    /* 吹き出し口の位置調整 */
+    left: 5%;
+    /* 吹き出し口の横位置 */
+    content: "";
+    /* コンテンツの挿入 */
+    position: absolute;
+    /* 親要素を基準 */
+}
+
+.disco {
+    background-image: url("君と僕の第三次世界大戦的恋愛革命.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
